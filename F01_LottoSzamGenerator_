@@ -59,6 +59,11 @@ OtosLottoGeneratorKiir(LottoSzamokTomb);
         function LottoGenerator() {
             let sorsolas = OtosLottoGenerator();
             document.getElementById('SzamokMegjelenitese').innerHTML = sorsolas.join(', ');
+            
+	    let listaElemFeltolto = document.createElement('li');
+            listaElemFeltolto.className = 'list-group-item';
+            listaElemFeltolto.textContent = eredmeny;
+            document.getElementById('SzamokMegjelenitese').innerHTML += `<li class="list-group-item">${eredmeny}</li>`;
         }
     </script>
 </body>
